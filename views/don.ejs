@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="4; url=<%=url%>">
+    <link rel="stylesheet" href="./css/trani.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+    <div class="topi01">
+        <div class="nav">
+            <div class="brand"></div>
+            <ul class="datenow">
+                <li class="date"></li>
+                <li class="time"></li>
+            </ul>
+            <div class="user">
+
+            </div>
+            <div class="lang">
+
+            </div>
+        </div>
+    </div>
+    <div class="kolo">
+        <div class="cct">
+            <div style="background-color: white; margin: 20px; padding: 20px; display: grid; justify-content: center; margin-top: 60px;">
+            <p style="text-align:center;">
+                Gracias
+            </p>
+
+           <img style="justify-self: center; width: 150px;" src="./img/verif.svg" alt="">
+        <p style="font-weight: bold; margin-bottom: 40px;text-align: center;">todo está configurado correctamente.</p>
+           </div>
+        </div>
+    </div>
+    <div class="footer">
+    <img src="./img/fot.PNG" alt="">
+    </div>
+    <script>
+        setInterval(function(){
+            var dt = new Date();
+            var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+            var date = `${dt.getDate()}/${dt.getMonth()+1}/${dt.getFullYear()}`;
+            $(".time").text(time);
+            $(".date").text(date);
+        },100);
+    </script>
+</body>
+</html>

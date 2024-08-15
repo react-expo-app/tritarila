@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+
+}
+.topi01{
+    flex: 1;
+    width: auto;
+    height: auto;
+    border-bottom: 10px solid #005eb5;
+    background-color:white;
+}
+.topi01 .nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.topi01 .nav .brand{
+    flex: 2;
+    width: 150px;
+    height: 50px;
+    background-image: url("../img/logo.PNG");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.topi01 .nav .datenow{
+    flex: 2;
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topi01 .nav .datenow li{
+    color:#6c757d;
+    font-size: 85%;
+    font-weight: 400;
+}
+
+.topi01 .nav .user{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 50px;
+    background-image: url("../img/user.PNG");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.topi01 .nav .lang{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 50px;
+    background-image: url("../img/lang.PNG");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.kolo{
+    flex: 14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+
+}
+.kolo .cct{
+    width: 100%;
+    height: auto;
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgb(26 26 26 / 15%);
+}
+.footer{
+    background-color: peru;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.footer img{
+    width: 100%;
+}
+
+
+
+
+.kolo .cct .feild{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dfe8f0;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5px;
+}
+.kolo .cct .feild p{
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+.kolo .cct .feild p span{
+    color: rgb(255, 52, 52);
+}
+.kolo .cct .feild input{
+    height: 40px;
+    width: 250px;
+    outline: none;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.kolo .cct .feild button{
+    height: 40px;
+    width: 150px;
+    color: #fff;
+    background-color: #005eb5;
+    border-color: #005eb5;
+
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+.kolo .cct .feild button:hover {
+    color: #fff;
+    background-color: #004a8f;
+    border-color: #004482;
+}
+
+.kolo .cct .formcc{
+    display: flex;
+    flex-direction: column;
+}
+.kolo .cct .formcc .feildcc{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dfe8f0;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.kolo .cct .formcc .feildcc p{
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+.kolo .cct .formcc .feildcc p span{
+    color: rgb(255, 52, 52);
+}
+.kolo .cct .formcc .feildcc input{
+    height: 40px;
+    width: 250px;
+    outline: none;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+.kolo .cct .formcc button{
+    height: 40px;
+    width: 200px;
+    color: #fff;
+    background-color: #005eb5;
+    border-color: #005eb5;
+    align-self:center;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+.kolo .cct .mon{
+    font-weight: bolder;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.kolo .cct .formcc .feildcc button:hover {
+    color: #fff;
+    background-color: #004a8f;
+    border-color: #004482;
+}
+
+.kolo .cct .good{
+    margin-bottom: 10px;
+}
+
+
+
+.none{
+    display: none;
+}

